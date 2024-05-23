@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Painting Two</title>
+    <style>
+
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        #toprow {
+            height: 290px;
+        }
+
+        #middlerow {
+            height: 10px;
+        }
+
+        #bottomrow {
+            height: 100px;
+        }
+
+        #lefttopcolumn {
+            width: 100px;
+        }
+
+        #bottomrightcolumn {
+            width: 20px;
+        }
+
+        #bigbox {
+            height: 290px;
+            width: 290px;
+        }
+
+        .mediumbox {
+            width: 100px;
+            height: 140px;
+        }
+
+        #smallbox {
+            width: 100px;
+            height: 100px;
+        }
+
+        #widebox {
+            width: 260px;
+            height: 100px;
+        }
+
+        #tinybox {
+            width: 20px;
+            height: 45px;
+        }
+
+        #divider1 {
+            height: 290px;
+            width: 10px;
+        }
+
+        #divider2 {
+            height: 10px;
+            width: 100px;
+        }
+
+        #divider3 {
+            height: 100px;
+            width: 10px;
+        }
+
+        #divider4 {
+            height: 10px;
+            width: 20px;
+        }
+
+        .red {
+            background-color: #cc3333;
+        }
+
+        .green {
+            background-color: #2fd884;
+        }
+
+        .blue {
+            background-color: #09b4fe;
+        }
+
+        .black {
+            background-color: #393939;
+        }
+
+        .right {
+            float: right;
+        }
+
+        #painting {
+            border: 5px solid #393939;
+            box-shadow: 10px 10px 0px #8d8d8d;
+            background-color: antiquewhite;
+        }        
+
+    </style>
+</head>
+
+<body>
+    <div id="painting">
+        <div id="toprow">
+            <div id="bigbox" class="red right"></div>
+            <div id="divider1" class="black right"></div>
+            <div id="topleftcolumn" class="right">
+                <div class="mediumbox blue"></div>
+                <div id="divider2" class="black"></div>
+                <div class="mediumbox green"></div>
+            </div>
+        </div>
+        <div id="middlerow" class="black"></div>
+        <div id="bottomrow">
+            <div id="widebox" class="green right"></div>
+            <div id="divider3" class="black right"></div>
+            <div id="bottomrightcolumn" class="right">
+                <div id="tinybox" class="red"></div>
+                <div id="divider4" class="black"></div>
+                <div id="tinybox" class="blue"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
